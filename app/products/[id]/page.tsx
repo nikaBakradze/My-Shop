@@ -4,9 +4,9 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { use } from 'react';
 
-export default function ProductDetailPage({ params }) {
-  const Params = use(params);
-  const { id } = Params;
+export default function ProductDetailPage({ params }: { params: Promise<{ id: string }> }) {
+  const unwrappedParams = use(params);
+  const { id } = unwrappedParams;
 
   return (
     <main className="min-h-screen bg-slate-950 text-white flex flex-col items-center justify-center p-6 relative">
