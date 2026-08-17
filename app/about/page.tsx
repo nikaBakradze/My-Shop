@@ -6,7 +6,6 @@ import Link from 'next/link';
 export default function AboutPage() {
   return (
     <main className="min-h-screen bg-slate-950 text-white flex items-center justify-center p-6 relative">
-      {/* უკან დაბრუნების ღილაკი ზედა მარცხენა კუთხეში */}
       <div className="absolute top-6 left-6">
         <Link 
           href="/"
